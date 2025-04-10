@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>meu YouTube</title>
+  <link rel="icon" type="image/png" href="img/logoytq.png" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 40px;
+      background-color: #f4f4f4;
+      flex-wrap: wrap;
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .search-area {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    .search-area input {
+      padding: 12px 20px;
+      font-size: 18px;
+      width: 500px;
+    }
+
+    .search-area button {
+      padding: 12px 25px;
+      font-size: 18px;
+    }
+
+    .search-area button:hover {
+      background-color: #f7f3f3;
+    }
+
+    .principal {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: flex-start;
+      padding: 30px 40px;
+      gap: 30px;
+    }
+
+    .left-content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .left-content img {
+      width: 1000px;
+      height: 600px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .video-details {
+      margin-top: 20px;
+      margin-left: 0;
+    }
+
+    .video-details h2 {
+      margin: 8px 0;
+      font-size: 40px;
+    }
+
+    .channel-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 12px 0;
+    }
+
+    .channel-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background-color: #aaa;
+    }
+
+    .right-content {
+      display: grid;
+      grid-template-rows: auto 1fr;
+      gap: 20px;
+      width: 100%;
+    }
+
+    .botoes {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .botoes button {
+      padding: 12px 20px;
+      font-size: 20px;
+      border: none;
+      border-radius: 8px;
+      background-color: #f1f1f1;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .botoes button:hover {
+      background-color: #e0e0e0;
+    }
+
+    .sidebar {
+      display: grid;
+      gap: 20px;
+    }
+
+    .video-suggestion {
+      display: flex;
+      gap: 15px;
+      padding: 10px;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .video-suggestion img {
+      width: 300px;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .video-info-suggestion {
+      font-size: 26px;
+      line-height: 1.4;
+    }
+
+    .video-info-suggestion .title {
+      font-weight: bold;
+      font-size: 20px;
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-area">
+      <img src="img/logoytq.png" width="100px" alt="" />
+      <h1>YouTube</h1>
+    </div>
+    <div class="search-area">
+      <input type="text" placeholder="Buscar..." />
+      <button>🔍</button>
+    </div>
+    <div class="img-icons">
+      <img src="img/icons.png" width="550px" alt="" />
+    </div>
+  </header>
+
+  <section class="principal">
+    <div class="left-content">
+      <img src="img/diario de março.jpg" alt="" />
+
+      <div class="video-details">
+        <h2>Como fazer um layout do youtube</h2>
+        <div class="channel-info">
+          <div class="channel-avatar"></div>
+          <div>
+            <strong>IanMaciel.DEV</strong><br>
+            5,58 mi de inscritos
+          </div>
+        </div>
+        <div>
+          3,5 mi de visualizações • há 2 semanas
+        </div>
+      </div>
+    </div>
+
+    <div class="right-content">
+      <div class="botoes">
+        <button>Todos</button>
+        <button>Relacionados</button>
+        <button>Enviados recentemente</button>
+        <button>Assistidos</button>
+      </div>
+
+      <div class="sidebar">
+        <div class="video-suggestion">
+          <img src="img/tumb.jpg" alt="thumb">
+          <div class="video-info-suggestion">
+            <div class="title"><strong>NOVO JOGO DE CARRO REVOLUCIONARIO</strong></div>
+            <div>IanMaciel.Dev</div>
+            <div>11 mi de visualizações • há 2 meses</div>
+          </div>
+        </div>
+
+        <div class="video-suggestion">
+          <img src="img/thumbdurant.jpg" alt="thumb">
+          <div class="video-info-suggestion">
+            <div class="title"><strong>8 FATOS CURIOSOS SOBRE KEVIN DURANT</strong></div>
+            <div>IanMaciel.Dev</div>
+            <div>1,8 mi de visualizações • há 2 meses</div>
+          </div>
+        </div>
+
+        <div class="video-suggestion">
+          <img src="img/tokio.jpg" alt="thumb">
+          <div class="video-info-suggestion">
+            <div class="title"><strong>MINHA ROTINA MORANDO EM TOKYO</strong></div>
+            <div>IanMaciel.Dev</div>
+            <div>298 visualizações • há 4 dias</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
