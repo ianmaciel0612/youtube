@@ -165,6 +165,101 @@
       font-size: 20px;
       margin-bottom: 6px;
     }
+
+    /* RESPONSIVIDADE */
+    @media (max-width: 1200px) {
+      .search-area input {
+        width: 300px;
+      }
+
+      .left-content img {
+        width: 100%;
+        height: auto;
+      }
+
+      .video-suggestion img {
+        width: 180px;
+      }
+
+      .video-info-suggestion {
+        font-size: 20px;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .principal {
+        grid-template-columns: 1fr;
+      }
+
+      .search-area input {
+        width: 100%;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+      }
+
+      .img-icons img {
+        width: 100%;
+        max-width: 350px;
+      }
+
+      .right-content {
+        width: 100%;
+      }
+
+      .video-suggestion {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .video-suggestion img {
+        width: 100%;
+        max-width: 350px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .search-area {
+        flex-direction: column;
+        align-items: stretch;
+        border-radius: 10px;
+      }
+
+      .search-area input,
+      .search-area button {
+        width: 100%;
+        border-radius: 0;
+      }
+
+      .search-area input {
+        border: none;
+        border-bottom: 1px solid #ccc;
+      }
+
+      .search-area button {
+        border-top: 1px solid #ccc;
+      }
+
+      .video-details h2 {
+        font-size: 24px;
+      }
+
+      .video-info-suggestion {
+        font-size: 16px;
+      }
+
+      .botoes {
+        flex-direction: column;
+      }
+
+      .botoes button {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
